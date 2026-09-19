@@ -2,7 +2,9 @@
 
 一个极简的 macOS 菜单栏小工具，用来直接显示 Codex 账户可用的额度窗口。
 
-由 [hcmango](https://github.com/hcmango) 开发并开源，工程名称为 `QuotaBar`。
+由 [hcmango](https://github.com/hcmango) 开发并持续维护，工程名称为 `QuotaBar`。
+
+本版本包含菜单栏外观、构建路径兼容性及额度窗口识别修复。问题和 PR 请提交到 [本仓库](https://github.com/hcmango/macos-quota-menubar)，版本变化见 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 适合用在
 
@@ -44,7 +46,7 @@
 ## 从源码运行
 
 ```bash
-git clone <this-repo-url>
+git clone https://github.com/hcmango/macos-quota-menubar.git
 cd macos-quota-menubar
 ./script/build_and_run.sh
 ```
@@ -60,7 +62,7 @@ cd macos-quota-menubar
 生成文件：
 
 ```text
-dist/QuotaBar-0.1.4.dmg
+dist/QuotaBar-0.1.5.dmg
 ```
 
 注意：这个脚本默认使用 ad-hoc 签名，只适合本机自用或开发测试。不要把这个未公证的 DMG 当成正式安装包分发给其他人。
