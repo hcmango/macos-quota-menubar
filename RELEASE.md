@@ -74,6 +74,6 @@ W  <percent>
 
 ## 维护流程
 
-日常修复从本仓库 `main` 创建分支，验证后合入 `main`。发布前运行 `swift test` 和 `swift build -c release`，更新打包版本与 CHANGELOG，再创建对应版本 tag。
+日常功能开发和修复默认直接在本仓库 `main` 分支进行，验证后提交并推送到 `origin/main`。发布前运行 `swift test` 和 `swift build -c release`，更新打包版本与 CHANGELOG，再创建对应版本 tag。
 
 `origin` 指向 `hcmango/macos-quota-menubar`。
