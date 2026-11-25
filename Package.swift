@@ -14,7 +14,11 @@ let package = Package(
         .executableTarget(
             name: "QuotaBar",
             path: "Sources/QuotaBar",
-            resources: [.copy("Resources/CodexProvider.png"), .copy("Resources/GrokProvider.icns")]
+            resources: [
+                .copy("Resources/CodexProvider.png"),
+                .copy("Resources/GrokProvider.icns"),
+                .copy("Resources/AgyProvider.png")
+            ]
         ),
         .testTarget(
             name: "QuotaBarTests",

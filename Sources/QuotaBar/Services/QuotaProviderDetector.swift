@@ -11,6 +11,7 @@ enum QuotaProviderDetector {
             FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent("Applications/Grok Bot.app")
         ].compactMap { $0 }
         if grokURLs.contains(where: isApplicationInstalled) { providers.append(.grok) }
+        if AgyQuotaClient.isInstalled { providers.append(.agy) }
         return providers
     }
 
