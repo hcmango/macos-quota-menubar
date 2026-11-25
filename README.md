@@ -4,9 +4,7 @@
 
 原生 Swift + AppKit / SwiftUI 构建，常驻内存极低，只显示本机已安装的工具，**不读取任何登录 Token、Cookie 或 Keychain 凭据**。
 
-<!-- 建议后续截一张「顶部菜单栏 + 展开卡片面板」的高清图放至 Assets/preview.png 并取消下行注释：
 ![QuotaBar Preview](Assets/preview.png)
--->
 
 ## 为什么做这个工具
 
