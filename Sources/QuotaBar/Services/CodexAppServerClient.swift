@@ -151,13 +151,14 @@ func runAppServerRequests(
         }
     }
 
+    let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0.0"
     try send(JSONRPCRequest(
         id: 1,
         method: "initialize",
         params: [
             "clientInfo": .object([
                 "name": .string("QuotaBar"),
-                "version": .string("0.1.5")
+                "version": .string(appVersion)
             ]),
             "capabilities": .object(["experimentalApi": .bool(true)])
         ]

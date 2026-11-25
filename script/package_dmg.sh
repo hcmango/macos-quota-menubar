@@ -4,7 +4,7 @@ set -euo pipefail
 APP_NAME="QuotaBar"
 DISPLAY_NAME="AI 额度菜单栏"
 BUNDLE_ID="com.hcmango.QuotaBar"
-VERSION="0.1.5"
+VERSION="1.0.0"
 MIN_SYSTEM_VERSION="13.0"
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"

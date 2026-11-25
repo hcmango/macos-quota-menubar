@@ -23,10 +23,12 @@ extension DateFormatter {
     }()
 
     static func syncDisplayString(for date: Date, at now: Date = Date(), calendar: Calendar = .current) -> String {
-        if calendar.isDate(date, inSameDayAs: now) {
-            return quotaTimeOnly.string(from: date)
-        }
-        return quotaHour.string(from: date)
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "zh_Hans_CN")
+        formatter.calendar = calendar
+        formatter.timeZone = calendar.timeZone
+        formatter.dateFormat = calendar.isDate(date, inSameDayAs: now) ? "HH:mm" : "M月d日 HH:mm"
+        return formatter.string(from: date)
     }
 
     static func relativeUpdateLabel(for date: Date?, at now: Date = Date()) -> String {
